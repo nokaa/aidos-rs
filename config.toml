@@ -1,0 +1,4 @@
+#default = "https://duckduckgo.com/?q="
+default = "https://www.startpage.com/do/asearch"
+rustn = "https://doc.rust-lang.org/nightly/std/?search="
+w = "https://en.wikipedia.org/w/index.php?search="
