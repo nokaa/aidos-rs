@@ -35,7 +35,7 @@ fn main() {
 fn search_handler(req: &Request, res: &mut ResponseWriter, ctx: &Ctx) {
     let search = req.form_value("q".to_string()).unwrap();
     if search.starts_with('!') {
-        let terms: Vec<&str> = search.splitn(1, ' ').collect();
+        let terms: Vec<&str> = search.splitn(2, ' ').collect();
         let (bang, search): (&str, &str) = (terms[0], terms[1]);
         let url = match ctx.get(bang) {
             Some(u) => u,
